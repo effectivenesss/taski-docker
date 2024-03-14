@@ -144,6 +144,7 @@ jobs:
           username: ${{ secrets.USER }}
           key: ${{ secrets.SSH_KEY }}
           passphrase: ${{ secrets.SSH_PASSPHRASE }}
+          #4
           script: |
             cd taski
             sudo docker compose -f docker-compose.production.yml pull
